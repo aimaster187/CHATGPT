@@ -8,20 +8,20 @@ app.get('/', (req, res) => {
     res.send('Maya License Server is Running Live & 4D!');
 });
 
-// 1. License Verify Endpoint
+// Key verification endpoint
 app.post('/api/license/verify-android', (req, res) => {
     const { license_key, device_id } = req.body;
     console.log(`Key check request aayi hai: ${license_key} for device: ${device_id}`);
     
     res.json({
         success: true,
-        message: "Key ekdum valid hai, bhai!",
+        message: "Key ekdum valid hai, Pranav ji!",
         entitlement: "licensed",
         tier: "promax"
     });
 });
 
-// 2. App Bootstrap Endpoint
+// App Bootstrap Endpoint
 app.post('/api/android/bootstrap', (req, res) => {
     res.json({
         ok: true,
@@ -34,7 +34,7 @@ app.post('/api/android/bootstrap', (req, res) => {
     });
 });
 
-// 3. Heartbeat Endpoint
+// App Heartbeat Endpoint
 app.post('/api/android/heartbeat', (req, res) => {
     res.json({
         ok: true,
