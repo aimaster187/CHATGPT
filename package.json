@@ -1,7 +1,7 @@
 {
-  "name": "maya-license-server",
+  "name": "pranav-key-panel",
   "version": "1.0.0",
-  "description": "Custom license server for Maya",
+  "description": "Custom 4D Key Panel for Maya",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
